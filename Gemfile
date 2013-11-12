@@ -37,7 +37,9 @@ group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
 	gem 'guard-rspec'
-	gem 'ruby_gntp'
+	gem 'rb-fsevent'
+	gem 'launchy'
+  	gem "growl", :git => "https://github.com/visionmedia/growl.git"
 end
 
 # Use ActiveModel has_secure_password
