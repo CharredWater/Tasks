@@ -1,0 +1,7 @@
+rails g model Task task:string
+creates a migrate file
+rake db:migrate
+
+rails console (or: rails c)
+
+http://net.tutsplus.com/tutorials/ruby/the-best-way-to-learn-ruby-on-rails/
