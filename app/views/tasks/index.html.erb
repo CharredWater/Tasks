@@ -1,16 +1,21 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
-<b>Hello World</b>
+<!--<h1>Tasks#index</h1>-->
+<h1>Tasks</h1>
 
 <%= render 'form' %>
 
 
 <u1>
 	<% for task in @tasks %>
-		<li id="task_<%= task.id%>">
-			<%= task.task%>
-			| <%= link_to 'Edit', edit_task_path(task) %>
-			| <%= link_to 'Delete', task, :method => 'delete' %>
-		</li>
+		<table border = "1" id="task_<%= task.id%>">
+			<tr>
+			<td width = 300 px><%= task.task%></td>
+			<td><%= link_to 'Edit', edit_task_path(task) %></td>
+			<td><%= link_to 'Delete', task, :method => 'delete' %></td>
+			</tr>
+		</table>
 	<%end%>
+</u1>
+
+<u1>
+	<%= link_to 'Blog', blogs_index_path, :confirm => 'go to blog?' %>
 </u1>
