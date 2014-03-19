@@ -1,9 +1,9 @@
 Tasks::Application.routes.draw do
-  get "blogs/index"
-  get "tasks/index"
   root :to => "tasks#index"
+  #get "blog/index"
+  #get "tasks/index"
   resources :tasks
-  resources :blogs
+  resources :blog
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

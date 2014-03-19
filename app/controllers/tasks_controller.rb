@@ -1,12 +1,16 @@
 class TasksController < ApplicationController
+respond_to :html, :xml
+
   def index
   	@task = Task.new
   	@tasks = Task.all
+    respond_with(@tasks)
   end
+
   def create
   	#render :text => params.inspect
   	Task.create (get_task)
-  	redirect_to :back
+  	redirect_to :back, :notice =>"Your task has been sucessfully created"
   end
 
   def edit

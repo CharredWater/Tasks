@@ -3,7 +3,6 @@
 
 <%= render 'form' %>
 
-
 <u1>
 	<% for task in @tasks %>
 		<table border = "1" id="task_<%= task.id%>">
@@ -17,5 +16,5 @@
 </u1>
 
 <u1>
-	<%= link_to 'Blog', blogs_index_path, :confirm => 'go to blog?' %>
+	<%= link_to 'Blog', blog_index_path, :confirm => 'go to blog?' %>
 </u1>

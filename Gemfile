@@ -33,13 +33,11 @@ group :doc do
 end
 
 group :test, :development do
-	gem 'turn'
 	gem 'rspec-rails'
 	gem 'capybara'
 	gem 'guard-rspec'
 	gem 'rb-fsevent'
 	gem 'launchy'
-  	gem "growl", :git => "https://github.com/visionmedia/growl.git"
 end
 
 # Use ActiveModel has_secure_password

@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131107004111) do
+ActiveRecord::Schema.define(version: 20140318064304) do
+
+  create_table "blogs", force: true do |t|
+    t.string   "blog"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "tasks", force: true do |t|
     t.string   "task"
